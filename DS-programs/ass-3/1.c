@@ -13,8 +13,7 @@ int linearSearch(int arr[], int n, int key)
         }
     }
     return 0; // Element not found
-}
-
+}
 int main()
  {
     int n;
@@ -26,14 +25,11 @@ int main()
     for (int i = 0; i < n; i++) 
     {
         scanf("%d", &arr[i]);
-    }
-
+    }
     int key;
     printf("Enter the value to search: ");
-    scanf("%d", &key);
-
-    int result = linearSearch(arr, n, key);
-
+    scanf("%d", &key);
+    int result = linearSearch(arr, n, key);
     if (result)
      {
         printf("Element %d is present in the array.\n", key);
@@ -41,7 +37,6 @@ int main()
      else 
     {
         printf("Element %d is not present in the array.\n", key);
-    }
-
+    }
     return 0;
 }
